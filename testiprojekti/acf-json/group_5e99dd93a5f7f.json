@@ -1,0 +1,151 @@
+{
+    "key": "group_5e99dd93a5f7f",
+    "title": "Kloonaa: Lohkon asetukset",
+    "fields": [
+        {
+            "key": "field_5e99dd991364f",
+            "label": "Sisennys yläpuolella",
+            "name": "padding_top",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "lg": "Väljä",
+                "md": "Keskikokoinen",
+                "sm": "Tiivis",
+                "none": "Ei ollenkaan"
+            },
+            "default_value": "sm",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e99ddfc13650",
+            "label": "Sisennys alapuolella",
+            "name": "padding_bottom",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "lg": "Väljä",
+                "md": "Keskikokoinen",
+                "sm": "Tiivis",
+                "none": "Ei ollenkaan"
+            },
+            "default_value": "sm",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61d58675d43bb",
+            "label": "Ankkuri",
+            "name": "block_anchor",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e99de1513651",
+            "label": "Väriteema",
+            "name": "block_theme",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Oletus",
+                "light": "Vaalea",
+                "dark": "Tumma"
+            },
+            "default_value": "default",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e9f3a167a447",
+            "label": "Näkyminen",
+            "name": "visibility",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "all": "Kaikilla",
+                "mobile": "Vain mobiilissa",
+                "desktop": "Ei mobiilissa",
+                "none": "Ei ollenkaan"
+            },
+            "default_value": "all",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 500,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1641383562
+}

@@ -1,0 +1,95 @@
+/* TODO leveydet, listat, lomakkeet yms */
+
+.container {
+  max-width: 1200px;
+  @apply mx-auto px-4;
+}
+
+a {
+  @apply text-white;
+  &:hover {
+    @apply no-underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-4;
+  a {
+    @apply no-underline;
+  }
+}
+
+p {
+  @apply my-3;
+}
+.lead {
+  @apply text-xl;
+}
+
+h1 {
+  @apply text-5xl;
+}
+h2 {
+  @apply text-4xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h4 {
+  @apply text-2xl;
+}
+h5 {
+  @apply text-xl;
+}
+
+@screen md {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-sm;
+  }
+}
+
+.btn {
+  @apply font-bold py-3 px-4 mt-2 inline-block no-underline;
+
+  /*   &.btn-primary {
+    @apply bg-primary-500 text-white transition-colors hover:bg-primary-900;
+  } */
+}
+
+.pagination-wrap {
+  @apply w-full text-center mt-8;
+}
+
+.bg-path {
+  clip-path: polygon(68% 100%, 100% 91%, 100% 0, 0 0, 0 90%);
+}
+
+.centerlinks {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+}
+
+.showImg {
+  display: visible;
+}
+.hideImg {
+  display: hidden;
+}

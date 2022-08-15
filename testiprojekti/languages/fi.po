@@ -1,0 +1,180 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Froggy\n"
+"POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-05-25 13:20+0200\n"
+"Last-Translator: Trimedia Oy <info@trimedia.fi>\n"
+"Language-Team: Trimedia Oy <info@trimedia.fi>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.4\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oho! Etsimääsi sivua ei löytynyt."
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr "Käytetyimmät kategoriat"
+
+#. translators: %1$s: smiley
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Yritä etsiä kuukausiarkistoista. %1$s"
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Yksi kommentti &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommenttia &ldquo;%2$s&rdquo;"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Kommenttien navigointi"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Vanhemmat kommentit"
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Uudemmat kommentit"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Kommentointi on suljettu."
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:18
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Voimanlähteenä %s"
+
+#: footer.php:20
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Teema: %1$s , %2$s."
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Päävalikko"
+
+#: functions.php:47
+msgid "Top menu"
+msgstr "Ylävalikko"
+
+#: functions.php:47
+msgid "Footer menu"
+msgstr "Alatunniste"
+
+#: functions.php:102
+msgid "Sidebar"
+msgstr "Sivupalkki"
+
+#: functions.php:102
+msgid "Sidebar archive"
+msgstr "Sivupalkki arkisto"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Hyppää sisältöön"
+
+#: header.php:45
+msgid "Primary Menu"
+msgstr "Päävalikko"
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Julkaistu: %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Julkaistu: %s"
+
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Merkitty avainsanoilla %1$s"
+
+#: inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr "Jätä kommentti"
+
+#: inc/template-tags.php:64
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+#: inc/template-tags.php:64
+msgid "% Comments"
+msgstr "% kommenttia"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:71 template-parts/content-page.php:33
+#, php-format
+msgid "Edit %s"
+msgstr "Muokkaa %s"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Hakutulokset: %s"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Mitään ei löytynyt"
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Oletko valmis julkaisemaan ensimmäisen artikkelisi? <a href=\"%1$s\">Aloita tästä</a>."
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Hakusanalla ei löytynyt sisältöä. Koitahan toisella hakusanalla."
+
+#: template-Fparts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Emme valitettavasti löytäneet etsimääsi. Ehkä hakutoiminnosta on apua."
+
+#: template-parts/content-page.php:22 template-parts/content.php:38
+msgid "Pages:"
+msgstr "Sivut: "
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:33
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Jatka artikkelin %s lukemista <span class=\"meta-nav\">&rarr;</span>"
+
+msgid "Search"
+msgstr "Etsi"
+
+msgid "Read more"
+msgstr "Lue lisää"

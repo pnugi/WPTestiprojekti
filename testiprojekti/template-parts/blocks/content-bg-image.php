@@ -1,0 +1,1 @@
+<img src="<?php echo get_field('bg_image'); ?>" class="lg:h-screen/2 sm:h-screen/3 w-full object-cover" alt="">

@@ -1,0 +1,216 @@
+{
+    "key": "group_5e99e00ceaf9a",
+    "title": "Kloonaa: Kuvan lisäasetukset",
+    "fields": [
+        {
+            "key": "field_61d57c1678b36",
+            "label": "Saavutettavuus",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_60095ffca092b",
+            "label": "Kuvateksti",
+            "name": "caption",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "hide": "Piilota",
+                "after": "Kuvan alapuolella",
+                "top": "Kuvan päällä"
+            },
+            "default_value": "hide",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60096085a092c",
+            "label": "Kuvasuhde ja asettelu",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e9ab8c9c8f27",
+            "label": "Asettelu",
+            "name": "order",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Kuva vasemmalla",
+                "right": "Kuva oikealla",
+                "middle": "Kuva keskellä",
+                "bg": "Kuva taustalla"
+            },
+            "default_value": "left",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e9ee733895a1",
+            "label": "Kuvasuhde",
+            "name": "ratio",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Mukautuva",
+                "21-9": "21:9",
+                "16-9": "16:9",
+                "6-4": "6:4",
+                "1-1": "1:1"
+            },
+            "default_value": "16-9",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e9ee6bffc7dd",
+            "label": "Asettelu - Mobiili",
+            "name": "m-order",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "first": "Kuva yllä",
+                "last": "Kuva alla",
+                "bg": "Kuva taustalla",
+                "none": "Ei kuvaa"
+            },
+            "default_value": "first",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e9f00ecb65ce",
+            "label": "Kuvasuhde - Mobiili",
+            "name": "m-ratio",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "auto": "Mukautuva",
+                "16-9": "16:9",
+                "6-4": "6:4",
+                "1-1": "1:1"
+            },
+            "default_value": "16-9",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "translations": "copy_once",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_600960b1dea1b",
+            "label": "Kuvasuhde ja asettelu (end)",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1641380953
+}

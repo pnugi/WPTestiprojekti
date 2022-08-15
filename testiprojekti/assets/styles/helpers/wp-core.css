@@ -1,0 +1,46 @@
+/**
+*   Styling for WP CORE
+*/
+
+.wp-block {
+	@apply max-w-full mx-auto;
+}
+
+img.alignright {float:right; margin:0 0 0.5em 0.5em}
+img.alignleft {float:left; margin:0 0.5em 0.5em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 0.5em 0.5em}
+a img.alignleft {float:left; margin:0 0.5em 0.5em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+/**
+*   Styling for WP CORE alignwide and alignfull classes
+*/
+
+.wp-block:not([data-align=full]) {
+  @apply max-w-6xl mx-auto;
+}
+.wp-block[data-align=full] {
+  @apply mx-4;
+}
+
+.alignwide {
+  /*max-width: 1600px;*/
+  @apply mx-auto;
+}
+
+.alignfull {
+  @apply max-w-full w-full;
+}
+
+.wp-block-image {
+  @apply m-0;
+  .alignright {
+    @apply max-w-6xl m-auto block float-none;
+    img {margin-left: auto;}
+  }
+  .alignleft {
+    @apply max-w-6xl m-auto block float-none;
+    img {margin-right: auto;}
+  }
+}

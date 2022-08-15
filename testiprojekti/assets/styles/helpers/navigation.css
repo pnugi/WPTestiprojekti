@@ -1,0 +1,45 @@
+/* Styles for navigations */
+
+#main-navigation {
+
+  /* Styles for both, desktop & mobile menus */
+  a {@apply text-black font-bold;}
+
+  .menu-item-has-children {@apply relative;}
+
+  .toggle-sub {@apply ml-2 leading-none;
+    i {@apply inline-block bg-center bg-cover bg-no-repeat h-[13px] w-[13px]; background-image: url('../assets/svg/menu-arrow.svg'); transform: rotate(-90deg);
+      &.open {transform: rotate(90deg);}
+    }
+  }
+
+  .sub-menu {@apply hidden;
+    &.active {@apply block;}
+  }
+
+  /* Mobile menu */
+  ul.menu {@apply mb-5 pl-0 list-none;
+    > li {@apply py-2;}
+  }
+
+  .sub-menu {@apply pl-4 pt-3;
+    li {@apply py-2;}
+  }
+
+
+  /* Desktop menu */
+  @screen md {
+    ul.menu {@apply flex flex-wrap mb-0 pl-0 list-none;
+      > li {@apply py-4;}
+      > li + li {@apply ml-5;}
+    }
+
+    .sub-menu {@apply absolute pt-0 pl-0 bg-gray-300 top-full left-0 w-[250px];
+      li {@apply py-3 px-4;
+        &.menu-item-has-children {@apply flex justify-between;}
+      }
+      .sub-menu {@apply left-full top-0 bg-gray-500;}
+    }
+  }
+
+}

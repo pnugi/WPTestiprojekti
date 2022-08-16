@@ -3,21 +3,20 @@
 
     <!-- NEEDS FIX, VH doesnt work if smaller height window -->
     <?php
-if (is_front_page()) {?>
-    <div class="bg-black opacity-70">
-        <img class="w-full items-center flex absolute h-33rem lg:h-40rem object-cover bg-path"
-            src="<?php echo get_field('heroimg')['url'] ?>" alt="">
-    </div>
-    <?php
-}
-?>
-
+        if (is_front_page()) {?>
+        <div class="bg-black opacity-70">
+            <img class="w-full items-center flex absolute h-33rem lg:h-40rem object-cover bg-path"
+                src="<?php echo get_field('heroimg')['url'] ?>" alt="">
+        </div>
+    <?php } ?>
 
     <!--- Nav --->
     <img class="w-12 col-start-2 -ml-4 relative justify-center h-24" src="<?php echo get_field('nav-logo')['url'] ?>"
         alt="">
     <nav class="col-span-8 col-start-3 relative">
         <ul class="justify-between centerlinks">
+            
+            <!-- Left nav links -->
             <li class="">
                 <?php
                     if (have_rows('nav-links')):
@@ -45,6 +44,7 @@ if (is_front_page()) {?>
                 ?>
             </li>
 
+            <!-- Right nav links -->
             <li>
                 <?php
                 if (have_rows('nav-links')):
@@ -61,7 +61,7 @@ if (is_front_page()) {?>
                 <?php
                     $rowIndex = get_row_index();
                     if ($rowIndex > 3): ?>
-                <a class="text-white text-sm w-22 ml-4 py-4  hover:scale-105 duration-400"
+                <a class="text-white text-sm w-22 ml-4 py-4 hover:scale-105 duration-400"
                     href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title);
                     ?><span class="text-xs pl-1"></span></a>
                 <?php endif;?>

@@ -17,17 +17,16 @@ die(); */
         <!-- Images -->
         <div class="grid col-start-3 col-span-9 grid-cols-3 lg:grid-cols-4 ">
             <?php
-if (have_rows('content-client')):
-    while (have_rows('content-client')): the_row();
+                if (have_rows('content-client')):
+                while (have_rows('content-client')): the_row();
+            ?>
+        <container class="grid justify-start hover:scale-105 transition ease-in-out cursor-pointer">
+            <img class="h-20 w-full object-contain" src="<?php echo get_sub_field('logo')['url'] ?>" class="" alt="">
+        </container>
+        <?php
+        endwhile;
+        endif;
         ?>
-            <container class="grid justify-start hover:scale-105 transition ease-in-out cursor-pointer">
-                <img class="h-20 w-full object-contain" src="<?php echo get_sub_field('logo')['url'] ?>" class=""
-                    alt="">
-            </container>
-            <?php
-    endwhile;
-endif;
-?>
         </div>
     </div>
 </section>

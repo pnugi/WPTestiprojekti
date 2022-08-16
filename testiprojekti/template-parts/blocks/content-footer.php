@@ -9,30 +9,33 @@ $companyName = get_field('company-name');
         <container class="">
             <img src="<?php echo get_field('logo') ?>" class="w-16 hover:scale-105 transition ease-in-out" alt="">
         </container>
+        <!-- Contact adress -->
         <container class="text-xs lg:text-sm">
             <p class="font-semibold mt-0"><?php echo $companyName ?></p>
             <p class="font-light mb-0"> <?php echo get_field('company-address') ?></p>
             <p class="font-light mt-0"><?php echo get_field('company-postnumber') ?></p>
         </container>
+
+        <!-- Links -->
         <container class="flex flex-col">
-            <!-- UL LI listaus tahan linkeille TODO-->
             <?php
-if (have_rows('footer-links')):
-    while (have_rows('footer-links')): the_row();
-        ?>
+                if (have_rows('footer-links')):
+                while (have_rows('footer-links')): the_row();
+            ?>
             <?php
-        $link = get_sub_field('link');
-        if ($link): $link_url = $link['url'];
-            $link_title = $link['title'];
-            $link_target = $link['target'] ? $link['target'] : '_self';?>
-            <a class="text-xs lg:text-sm font-light text-white container mt-0 pb-4"
-                href="<?php echo esc_url($link_url); ?>"
-                target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><?php if ($link_target != '_self'): ?><span
+                $link = get_sub_field('link');
+                    if ($link): $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';?>
+                <a class="text-xs lg:text-sm font-light text-white container mt-0 pb-4" 
+                    href="<?php echo esc_url($link_url); ?>"
+                    target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?><?php if ($link_target != '_self'): ?><span
                     class="sr-only"><?=$external;?></span> ↗<?php endif;?></a>
-            <?php endif;?> <?php
-endwhile;
-endif;
-?>
+            <?php endif;?> 
+            <?php
+            endwhile;
+            endif;
+            ?>
         </container>
     </div>
     <!-- Description -->

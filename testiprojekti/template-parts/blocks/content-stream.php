@@ -13,19 +13,20 @@
         <div class="streamSwiper h-92 lg:h-72 ">
             <div class="swiper-wrapper">
                 <?php 
-            $streamPosts = new WP_Query(array(
-                'posts_per_page' => 4,
-                'post_type' => 'office-stream'
-            ));
-            while($streamPosts->have_posts()){
-            $streamPosts->the_post(); ?>
+                    $streamPosts = new WP_Query(array(
+                    'posts_per_page' => 4,
+                    'post_type' => 'office-stream'
+                    ));
+                    while($streamPosts->have_posts()){
+                    $streamPosts->the_post(); 
+                ?>
 
                 <div class=" swiper-slide w-52 ">
                     <a href="<?php the_permalink();?>">
                         <img class="object-cover w-full h-40 pb-2"
                             src="<?php the_field('stream-image', get_the_ID())['url']?>" alt="">
                         <p class="pb-4"><?php the_title();?><img class="w-6 inline-block ml-2"
-                                src="<?php echo get_field('arrow')?>" alt=""></p>
+                            src="<?php echo get_field('arrow')?>" alt=""></p>
                     </a>
                     <hr class="border-b border-accent-700">
                 </div>

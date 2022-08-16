@@ -1,3 +1,5 @@
+<!-- WIP NAV? -->
+
 <header class="grid grid-cols-12 h-24 ">
     <!--- Hero img -->
     <div class="bg-black opacity-70">

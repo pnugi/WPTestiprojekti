@@ -1,9 +1,8 @@
 <?php 
-$workers = new WP_Query(array(
-    'posts_per_page' => 40,
-    'post_type' => 'workers'
-));
-
+    $workers = new WP_Query(array(
+        'posts_per_page' => 40,
+        'post_type' => 'workers'
+    ));
 ?>
 <!-- Header -->
 <section class="mb-12 pb-6">
@@ -30,9 +29,9 @@ $workers = new WP_Query(array(
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <?php
-
-            while($workers->have_posts()){
-            $workers->the_post(); ?>
+                while($workers->have_posts()){
+                $workers->the_post(); 
+            ?>
                 <div class="worker">
                     <div class="text-white flex flex-col">
                         <img src="<?php the_field('worker_image', get_the_ID())['url']?>" alt="">
@@ -42,16 +41,14 @@ $workers = new WP_Query(array(
                         <span id="profession" ><?php the_field('worker_profession', get_the_ID())?></span>
                     </div>
                 </div>
-
             <?php } 
             ?>
-
-
         </div>
         </div>
 </div>
 </section>
 
+<!-- Filtering by profession is very broken. -->
 <script>
  document.getElementById('btnAll').addEventListener('click', showPersons);
  document.getElementById('btnDesign').addEventListener('click', showPersons);
@@ -59,8 +56,6 @@ $workers = new WP_Query(array(
  document.getElementById('btnStrat').addEventListener('click', showPersons);
  document.getElementById('btnPm').addEventListener('click', showPersons);
  
-
-
  function showPersons(){
     const workers = document.querySelectorAll('.worker');
     let profession = document.getElementById(profession);
@@ -73,8 +68,6 @@ $workers = new WP_Query(array(
     }
 }
 }
-
-
 
 /*  function showDesigners(){
      if(profession.textContent.includes('designer')){

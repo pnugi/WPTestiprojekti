@@ -13,18 +13,18 @@
         <div class="newsSwiper">
             <div class="swiper-wrapper h-40rem">
                 <?php 
-            $news = new WP_Query(array(
-                'posts_per_page' => 4,
-                'post_type' => 'uutiset'
-            ));
-            while($news->have_posts()){
-            $news->the_post(); ?>
-
+                $news = new WP_Query(array(
+                    'posts_per_page' => 4,
+                    'post_type' => 'uutiset'
+                ));
+                while($news->have_posts()){
+                $news->the_post(); 
+                ?>
                 <div class="swiper-slide w-52">
                     <a href="<?php the_permalink();?>">
                         <img class="object-cover w-full h-30rem pb-2"
                             src="<?php the_field('news-image', get_the_ID())['url']?>" alt="">
-                        <!--  FIX TITLE ?? -->
+                        <!--  FIX TITLE -->
                         <h3 class="text-accent-300">
                             <?php the_field('news-title', get_the_ID())?>
                         </h3>
@@ -37,13 +37,8 @@
                         </div>
                     </a>
                 </div>
-
-                <?php } ?>
+            <?php } ?>
             </div>
         </div>
     </div>
-
-
-
-
 </section>

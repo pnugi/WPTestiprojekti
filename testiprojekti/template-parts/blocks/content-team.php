@@ -19,13 +19,13 @@
             <div class="flex flex-col md:flex-row sm:flex-row">
                 <img class="lg:w-3/5 sm:w-1/2 object-cover lg:pb-0"
                     src="<?php echo get_sub_field('team-image')['url'] ?>" alt="">
-
                 <div class="text-white container -ml-4  flex flex-col lg:pt-28 pt-8">
                     <h2 class="text-xl lg:text-2xl mb-4"><?php echo get_sub_field('team-title') ?></h2>
                     <p class="mb-8 text-light text-sm"><?php echo get_sub_field('team-text') ?></p>
 
                     <?php
-                    if (is_front_page()) {?>
+                        if (is_front_page()) {
+                    ?>
                     <div class="flex flex-row">
                         <img class="w-8 animate-pulse" src="<?php echo get_sub_field('team-arrow')['url'] ?>" alt="">
                         <span class="text-xs text-light ml-2.5 mt-2">Tutustu meihin</span>

@@ -11,33 +11,29 @@
                     <h2 class="text-accent-300 font-sora"><?php echo get_sub_field('title') ?></h2>
                     <p class="mt-4 mb-8 text-white"><?php echo get_sub_field('description') ?></p>
 
-                    <!-- Loop over sub repeater rows. -->
+                    <!-- Loop over sub repeater rows -->
                     <ul>
                         <?php
-                    if (have_rows('categories')):
-                    while (have_rows('categories')): the_row();
-                    ?>
+                            if (have_rows('categories')):
+                            while (have_rows('categories')): the_row();
+                        ?>
                         <li class="text-sm text-white"><?php echo get_sub_field('category') ?></li>
                         <?php
-                    endwhile;
-                    endif;
-                    ?>
+                            endwhile;
+                            endif;
+                        ?>
                     </ul>
 
                     <div class="pb-2 mt-8 flex ">
                         <a class="text-white text-xs hover:border-b border-primary-500 py-2"
                             href="<?php get_sub_field('service-link')['url'] ?>"
                             target="<?php echo get_sub_field('service-link')['target'] ?>">Tutustu
-                            <?php echo get_sub_field('service-link')['title'] ?> projekteihin <img
-                                class="w-4 inline-block ml-2" src="<?php echo get_field('link-arrow')?>" alt="">
+                            <?php echo get_sub_field('service-link')['title'] ?> projekteihin 
+                            <img class="w-4 inline-block ml-2" src="<?php echo get_field('link-arrow')?>" alt="">
                         </a>
-
-
                     </div>
-
                 </div>
                 <!-- End category loop -->
-
                 <?php
                     endwhile;
                     endif;
